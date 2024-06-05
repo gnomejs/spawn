@@ -9,6 +9,8 @@
         "exclude": ["**/*.md", "**/node_modules/"]
     },
 
+    "exclude": [".git", "node_modules"],
+
     "publish": {
       "include": ["**/*.md"],
       "exclude": [
