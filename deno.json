@@ -1,0 +1,26 @@
+{
+    "tasks": {
+        "test": "deno test -A"
+    },
+
+    "fmt": {
+        "lineWidth": 120,
+        "indentWidth": 4,
+        "exclude": ["**/*.md", "**/node_modules/"]
+    },
+
+    "publish": {
+      "include": ["**/*.md"],
+      "exclude": [
+        "**/*_test.ts"
+      ]
+   },
+
+    "workspaces": [
+        "./cloud"
+    ],
+    "imports": {
+        "@gnome/exec": "jsr:@gnome/exec@^0.4.4",
+        "@std/assert": "jsr:@std/assert@^0.226.0"
+    }
+}

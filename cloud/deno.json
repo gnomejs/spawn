@@ -1,0 +1,17 @@
+{
+    "name": "@spawn/cloud",
+    "version": "0.0.0",
+    "exports": {
+        "./aws": "./aws/mod.ts",
+        "./aws/command": "./aws/command.ts",
+
+        "./az": "./az/mod.ts",
+        "./az/command": "./az/command.ts",
+
+        "./doctl": "./doctl/mod.ts",
+        "./doctl/command": "./doctl/command.ts",
+
+        "./flarectl": "./flarectl/mod.ts",
+        "./flarectl/command": "./flarectl/command.ts"
+    }
+}
