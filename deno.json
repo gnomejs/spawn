@@ -25,6 +25,7 @@
     "imports": {
         "@gnome/exec": "jsr:@gnome/exec@^0.4.4",
         "@gnome/fs": "jsr:@gnome/fs@^0.1.0",
+        "@gnome/os-constants": "jsr:@gnome/os-constants@^0.0.0",
         "@std/assert": "jsr:@std/assert@^0.226.0",
         "@std/fs": "jsr:@std/fs@^0.229.1",
         "@std/path": "jsr:@std/path@^0.225.2"
