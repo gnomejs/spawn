@@ -12,17 +12,21 @@
     "exclude": [".git", "node_modules"],
 
     "publish": {
-      "include": ["**/*.md"],
-      "exclude": [
-        "**/*_test.ts"
-      ]
-   },
+        "include": ["**/*.md"],
+        "exclude": [
+            "**/*_test.ts"
+        ]
+    },
 
     "workspaces": [
-        "./cloud"
+        "./cloud",
+        "./common"
     ],
     "imports": {
         "@gnome/exec": "jsr:@gnome/exec@^0.4.4",
-        "@std/assert": "jsr:@std/assert@^0.226.0"
+        "@gnome/fs": "jsr:@gnome/fs@^0.1.0",
+        "@std/assert": "jsr:@std/assert@^0.226.0",
+        "@std/fs": "jsr:@std/fs@^0.229.1",
+        "@std/path": "jsr:@std/path@^0.225.2"
     }
 }

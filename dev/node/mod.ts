@@ -1,0 +1,1 @@
+export { nodeScript, node } from "./command.ts"
