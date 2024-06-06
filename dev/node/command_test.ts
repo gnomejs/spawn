@@ -1,20 +1,23 @@
 import { nodeScript, node } from "./command.ts";
 import { remove, writeTextFile } from "@gnome/fs";
 import { assert as ok, assertEquals as equals } from "@std/assert";
+import { pathFinder } from "jsr:@gnome/exec@^0.4.4/path-finder";
 
-Deno.test("node", async () => {
+const hasExe = await pathFinder.findExe("node") !== undefined;
+
+Deno.test("node script", {ignore: !hasExe}, async () => {
     const result = await nodeScript("console.log('Hello, World!');");
     equals(await result.text(), `Hello, World!\n`);
     equals(result.code, 0);
 });
 
-Deno.test("nodeCli", async () => {
+Deno.test("node", {ignore: !hasExe}, async () => {
     const result = await node("--version");
     equals(result.code, 0);
     ok(result.text().startsWith("v"));
 });
 
-Deno.test("files", async () => {
+Deno.test("node script with files", {ignore: !hasExe}, async () => {
     const script = `console.log('Hello, World!');`;
     await writeTextFile("test.js", script);
     await writeTextFile("test.mjs", script);

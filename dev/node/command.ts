@@ -21,9 +21,9 @@ pathFinder.set("node", {
 export const NODE_EXT = ".js";
 
 /**
- * Represents a Node command.
+ * Represents a node command.
  */
-export class NodeCliCommand extends Command {
+export class NodeCommand extends Command {
     /**
      * Creates a new instance of the `NodeCommand` class.
      * @param args The command arguments.
@@ -37,9 +37,9 @@ export class NodeCliCommand extends Command {
 /**
  * Represents a node script or inline file executed using the `node` commandline.
  */
-export class NodeShellCommand extends ShellCommand {
+export class NodeScriptCommand extends ShellCommand {
     /**
-     * Creates a new instance of the `NodeShellCommand` class.
+     * Creates a new instance of the `NodeScriptCommand` class.
      * @param script The javascript to execute.
      * @param options The options for the node command.
      */
@@ -54,6 +54,10 @@ export class NodeShellCommand extends ShellCommand {
         return NODE_EXT;
     }
 
+    /**
+     * Gets the script file and whether it was generated.
+     * @returns the script file and whether it was generated.
+     */
     getScriptFile(): { file: string | undefined; generated: boolean } {
         let script = this.script.trimEnd();
 
@@ -95,55 +99,64 @@ export class NodeShellCommand extends ShellCommand {
 }
 
 /**
- * Executes the node command line using the NodeCliCommand class.
+ * Executes the node command line using the NodeCommand class.
  *
  * @param args The command arguments.
  * @param options The command options.
- * @returns a new instance of the NodeCliCommand class.
+ * @returns a new instance of the NodeCommand class.
  *
  * @example
  * ```ts
- * import { nodeCli } from "@gnome/node-cli";
+ * import { nodeCli } from "@spawn/dev/node";
  *
- * const result = await nodeCli("--version");
+ * const result = await node("--version");
  * console.log(result.code);
  * console.log(result.text());
  * ```
  *
  * @example
  * ```ts
- * import { nodeCli } from "@gnome/node-cli";
+ * import { node } from "@spawn/dev/node";
  *
  * /// execute the node command and writes the version to stdout.
- * await nodeCli(["--version"]).run();
+ * await node(["--version"]).run();
  * ```
  */
-export function node(args?: CommandArgs, options?: CommandOptions): NodeCliCommand {
-    return new NodeCliCommand(args, options);
+export function node(args?: CommandArgs, options?: CommandOptions): NodeCommand {
+    return new NodeCommand(args, options);
 }
 
 /**
- * Executes a node inline script or script file using the NodeShellCommand class.
+ * Executes a node inline script or script file using the NodeScriptCommand class.
  *
  * @param script - The node script to execute.
  * @param options - Optional options for the node shell command.
- * @returns A new instance of the NodeShellCommand class.
+ * @returns A new instance of the NodeScriptCommand class.
+ * @see {NodeScriptCommand}
  * @example
  * ```ts
- * import { node } from "@spawn/dev/node";
+ * import { nodeScript } from "@spawn/dev/node";
  * 
- * await nodeShell("console.log('Hello World')").run();
+ * await nodeScript("console.log('Hello World')").run();
  * ```
  * 
  * @example
  * ```ts
- * import { node } from "@spawn/dev/node";
+ * import { nodeScript } from "@spawn/dev/node";
  * 
- * const r = await nodeShell("console.log('Hello World')");
+ * const r = await nodeScript("console.log('Hello World')");
+ * console.log(r.code);
+ * console.log(r.text());
+ * ```
+ * @example
+ * ```ts
+ * import { nodeScript } from "@spawn/dev/node";
+ * 
+ * const r = await nodeScript("test.js");
  * console.log(r.code);
  * console.log(r.text());
  * ```
  */
-export function nodeScript(script: string, options?: ShellCommandOptions): NodeShellCommand {
-    return new NodeShellCommand(script, options);
+export function nodeScript(script: string, options?: ShellCommandOptions): NodeScriptCommand {
+    return new NodeScriptCommand(script, options);
 }

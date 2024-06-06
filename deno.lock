@@ -5,6 +5,7 @@
       "jsr:@gnome/char@^0.0.0": "jsr:@gnome/char@0.0.0",
       "jsr:@gnome/env@^0.1.0": "jsr:@gnome/env@0.1.0",
       "jsr:@gnome/errors@^0.0.0": "jsr:@gnome/errors@0.0.0",
+      "jsr:@gnome/exec@^0.4.1": "jsr:@gnome/exec@0.4.4",
       "jsr:@gnome/exec@^0.4.4": "jsr:@gnome/exec@0.4.4",
       "jsr:@gnome/fs@^0.0.0": "jsr:@gnome/fs@0.0.0",
       "jsr:@gnome/fs@^0.1.0": "jsr:@gnome/fs@0.1.0",
@@ -12,6 +13,7 @@
       "jsr:@gnome/runtime-constants@^0.0.0": "jsr:@gnome/runtime-constants@0.0.0",
       "jsr:@gnome/runtime-info@^0.0.0": "jsr:@gnome/runtime-info@0.0.0",
       "jsr:@gnome/strings@^0.1.0": "jsr:@gnome/strings@0.1.0",
+      "jsr:@std/assert@0.225.3": "jsr:@std/assert@0.225.3",
       "jsr:@std/assert@^0.224.0": "jsr:@std/assert@0.224.0",
       "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
       "jsr:@std/internal@^1.0.0": "jsr:@std/internal@1.0.0",
@@ -78,6 +80,12 @@
       },
       "@std/assert@0.224.0": {
         "integrity": "8643233ec7aec38a940a8264a6e3eed9bfa44e7a71cc6b3c8874213ff401967f"
+      },
+      "@std/assert@0.225.3": {
+        "integrity": "b3c2847aecf6955b50644cdb9cf072004ea3d1998dd7579fc0acb99dbb23bd4f",
+        "dependencies": [
+          "jsr:@std/internal@^1.0.0"
+        ]
       },
       "@std/assert@0.226.0": {
         "integrity": "0dfb5f7c7723c18cec118e080fec76ce15b4c31154b15ad2bd74822603ef75b3",

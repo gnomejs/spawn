@@ -10,19 +10,19 @@ The age module wraps the age cli. [@gnome/exec](https://jsr.io/@gnome/exec)
 powers this module.
 
 ```typescript
-import { nodeShell } from '@spawn/dev/node'
+import { nodeScript } from '@spawn/dev/node'
 
 // outputs directly to stdout and stderror streams.
-await nodeShell("console.log('Hello')").run();
+await nodeScript("console.log('Hello')").run();
 
 // pipes the output
-const result = await nodeShell("console.log('Hello')");
+const result = await nodeScript("console.log('Hello')");
 console.log(result.stdout);
 console.log(result.text());
 console.log(result.code);
 
 // invoke a file
-const result2 = await nodeShell("test.js", { cwd: '/tmp' });
+const result2 = await nodeScript("test.js", { cwd: '/tmp' });
 console.log(result.stdout);
 console.log(result.text());
 console.log(result.code);
