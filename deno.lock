@@ -3,83 +3,83 @@
   "packages": {
     "specifiers": {
       "jsr:@gnome/char@^0.0.0": "jsr:@gnome/char@0.0.0",
-      "jsr:@gnome/env@^0.1.0": "jsr:@gnome/env@0.1.0",
+      "jsr:@gnome/char@^0.1.0": "jsr:@gnome/char@0.1.0",
+      "jsr:@gnome/env@^0.2.0": "jsr:@gnome/env@0.2.0",
       "jsr:@gnome/errors@^0.0.0": "jsr:@gnome/errors@0.0.0",
-      "jsr:@gnome/exec@^0.4.1": "jsr:@gnome/exec@0.4.4",
-      "jsr:@gnome/exec@^0.4.4": "jsr:@gnome/exec@0.4.4",
-      "jsr:@gnome/fs@^0.0.0": "jsr:@gnome/fs@0.0.0",
-      "jsr:@gnome/fs@^0.1.0": "jsr:@gnome/fs@0.1.0",
-      "jsr:@gnome/os-constants@^0.0.0": "jsr:@gnome/os-constants@0.0.0",
-      "jsr:@gnome/runtime-constants@^0.0.0": "jsr:@gnome/runtime-constants@0.0.0",
-      "jsr:@gnome/runtime-info@^0.0.0": "jsr:@gnome/runtime-info@0.0.0",
+      "jsr:@gnome/errors@^0.1.0": "jsr:@gnome/errors@0.1.0",
+      "jsr:@gnome/exec@^0.5.0": "jsr:@gnome/exec@0.5.0",
+      "jsr:@gnome/fs@^0.2.0": "jsr:@gnome/fs@0.2.0",
+      "jsr:@gnome/os-constants@^0.1.0": "jsr:@gnome/os-constants@0.1.0",
+      "jsr:@gnome/runtime-constants@^0.1.0": "jsr:@gnome/runtime-constants@0.1.0",
       "jsr:@gnome/strings@^0.1.0": "jsr:@gnome/strings@0.1.0",
+      "jsr:@gnome/strings@^0.2.0": "jsr:@gnome/strings@0.2.0",
       "jsr:@std/assert@0.225.3": "jsr:@std/assert@0.225.3",
-      "jsr:@std/assert@^0.224.0": "jsr:@std/assert@0.224.0",
       "jsr:@std/assert@^0.226.0": "jsr:@std/assert@0.226.0",
+      "jsr:@std/encoding@^0.224.3": "jsr:@std/encoding@0.224.3",
       "jsr:@std/internal@^1.0.0": "jsr:@std/internal@1.0.0",
-      "jsr:@std/path@^0.224.0": "jsr:@std/path@0.224.0",
       "jsr:@std/path@^0.225.2": "jsr:@std/path@0.225.2",
-      "npm:@types/node": "npm:@types/node@18.16.19"
+      "npm:@types/node": "npm:@types/node@18.16.19",
+      "npm:fs-ext@2.0.0": "npm:fs-ext@2.0.0"
     },
     "jsr": {
       "@gnome/char@0.0.0": {
         "integrity": "e4791f67aa6b8e32e603b3e2fd21a3f1d0b4c9a2ac9465ff22a71c8476b24be5"
       },
-      "@gnome/env@0.1.0": {
-        "integrity": "f9883914317486ab5728794aaf4fb7f78b81490b4bd7b6c5fe1c4974196fe4da",
+      "@gnome/char@0.1.0": {
+        "integrity": "e581c21a6b4bf56fe1bb4788251b46aeb363f197471c439acc8392eb50eb38aa"
+      },
+      "@gnome/env@0.2.0": {
+        "integrity": "13631ab74a9ea0e32ecaa4b59bfbc0c9b4c091b9468d3c51f7e18ca0e043b584",
         "dependencies": [
-          "jsr:@gnome/char@^0.0.0"
+          "jsr:@gnome/char@^0.0.0",
+          "jsr:@std/encoding@^0.224.3"
         ]
       },
       "@gnome/errors@0.0.0": {
         "integrity": "d288a695ea6f368082435382245d69366a26ebae707a78fc573eb6996c55185e"
       },
-      "@gnome/exec@0.4.4": {
-        "integrity": "52b658d995e90e05f79186df0c7a64a04e7d063b4f4bd7f7a9750dbc56aa6e9a",
+      "@gnome/errors@0.1.0": {
+        "integrity": "2e099e510a33cde103de65a26bd3ea2be022e42e0742ba19be81bb2d9ffa6f61"
+      },
+      "@gnome/exec@0.5.0": {
+        "integrity": "39890a3e590df444c60fcfbd6b3835135b1e7ef365efaa9ac96ef9cb2c94d097",
         "dependencies": [
-          "jsr:@gnome/env@^0.1.0",
-          "jsr:@gnome/errors@^0.0.0",
-          "jsr:@gnome/fs@^0.0.0",
-          "jsr:@gnome/os-constants@^0.0.0",
+          "jsr:@gnome/env@^0.2.0",
+          "jsr:@gnome/errors@^0.1.0",
+          "jsr:@gnome/fs@^0.2.0",
+          "jsr:@gnome/os-constants@^0.1.0",
           "jsr:@gnome/strings@^0.1.0",
-          "jsr:@std/path@^0.224.0"
+          "jsr:@gnome/strings@^0.2.0",
+          "jsr:@std/path@^0.225.2"
         ]
       },
-      "@gnome/fs@0.0.0": {
-        "integrity": "2345f5ad7b0cc264ba3da59ce26e8f825a268c960a32e3b7c049f5b4f5b3efbf",
-        "dependencies": [
-          "jsr:@gnome/runtime-constants@^0.0.0"
-        ]
-      },
-      "@gnome/fs@0.1.0": {
-        "integrity": "b60c1d2197f59ec826664e38822d02ef8a61a868acb20aa9ab4ff1dfc812ea07",
+      "@gnome/fs@0.2.0": {
+        "integrity": "417ccaedc3c9d0c3f57f30e424619667da787c70148ad8175c3e9ffd3500989a",
         "dependencies": [
           "jsr:@gnome/errors@^0.0.0",
-          "jsr:@gnome/os-constants@^0.0.0",
-          "jsr:@gnome/runtime-constants@^0.0.0",
-          "jsr:@std/path@^0.224.0"
+          "jsr:@gnome/os-constants@^0.1.0",
+          "jsr:@gnome/runtime-constants@^0.1.0",
+          "jsr:@std/path@^0.225.2",
+          "npm:fs-ext@2.0.0"
         ]
       },
-      "@gnome/os-constants@0.0.0": {
-        "integrity": "46f1ac1ddaef0d55fc03d256ec6ee6441918910b0c65c97afaf9ec8ced0f8087",
+      "@gnome/os-constants@0.1.0": {
+        "integrity": "95c55085a34765235f3b487bcab1ebcdffbd5ab208e4cf4921928ff5355ea4f7",
         "dependencies": [
-          "jsr:@gnome/runtime-info@^0.0.0"
+          "jsr:@gnome/runtime-constants@^0.1.0"
         ]
       },
-      "@gnome/runtime-constants@0.0.0": {
-        "integrity": "8f0a2e3a53dc3fdb4b57acc9f4e9042326462eac3a80e87d231399fafe0f3ec6"
-      },
-      "@gnome/runtime-info@0.0.0": {
-        "integrity": "f803de221c579a7e9e3391949e458895ea4c5620561961598efd91b581e58cfd"
+      "@gnome/runtime-constants@0.1.0": {
+        "integrity": "6d411882841ce4349873e5f440235872f38c62f8a6baa6c98c9765ab03fd0946"
       },
       "@gnome/strings@0.1.0": {
-        "integrity": "67445d4a81188a988e48e8bef8afa7b7c1099b3430a0871a15ee8f5d81368089",
-        "dependencies": [
-          "jsr:@gnome/char@^0.0.0"
-        ]
+        "integrity": "67445d4a81188a988e48e8bef8afa7b7c1099b3430a0871a15ee8f5d81368089"
       },
-      "@std/assert@0.224.0": {
-        "integrity": "8643233ec7aec38a940a8264a6e3eed9bfa44e7a71cc6b3c8874213ff401967f"
+      "@gnome/strings@0.2.0": {
+        "integrity": "b61a96087272879397ffce31e18267b28939f98234e280a5eaee367f65be4916",
+        "dependencies": [
+          "jsr:@gnome/char@^0.1.0"
+        ]
       },
       "@std/assert@0.225.3": {
         "integrity": "b3c2847aecf6955b50644cdb9cf072004ea3d1998dd7579fc0acb99dbb23bd4f",
@@ -93,14 +93,11 @@
           "jsr:@std/internal@^1.0.0"
         ]
       },
+      "@std/encoding@0.224.3": {
+        "integrity": "5e861b6d81be5359fad4155e591acf17c0207b595112d1840998bb9f476dbdaf"
+      },
       "@std/internal@1.0.0": {
         "integrity": "ac6a6dfebf838582c4b4f61a6907374e27e05bedb6ce276e0f1608fe84e7cd9a"
-      },
-      "@std/path@0.224.0": {
-        "integrity": "55bca6361e5a6d158b9380e82d4981d82d338ec587de02951e2b7c3a24910ee6",
-        "dependencies": [
-          "jsr:@std/assert@^0.224.0"
-        ]
       },
       "@std/path@0.225.2": {
         "integrity": "0f2db41d36b50ef048dcb0399aac720a5348638dd3cb5bf80685bf2a745aa506",
@@ -113,14 +110,26 @@
       "@types/node@18.16.19": {
         "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
         "dependencies": {}
+      },
+      "fs-ext@2.0.0": {
+        "integrity": "sha512-aK8NlpSO5LUdSoWeshpnkgtptbua1rGo58Wc+mHQ2+JnoBlubMTsnV56Swl4bA0msrgAhG8TDu1aGS8deJwzBQ==",
+        "dependencies": {
+          "nan": "nan@2.19.0"
+        }
+      },
+      "nan@2.19.0": {
+        "integrity": "sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==",
+        "dependencies": {}
       }
     }
   },
   "remote": {},
   "workspace": {
     "dependencies": [
-      "jsr:@gnome/exec@^0.4.4",
-      "jsr:@gnome/fs@^0.1.0",
+      "jsr:@gnome/env@^0.2.0",
+      "jsr:@gnome/exec@^0.5.0",
+      "jsr:@gnome/fs@^0.2.0",
+      "jsr:@gnome/os-constants@^0.1.0",
       "jsr:@std/assert@^0.226.0",
       "jsr:@std/fs@^0.229.1",
       "jsr:@std/path@^0.225.2"

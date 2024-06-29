@@ -1,0 +1,96 @@
+{
+    "name": "@spawn/cloud",
+    "version": "0.0.0-beta-001",
+    "exports": {
+        "./age": "./age/mod.ts",
+        "./age/command": "./age/command.ts",
+
+        "./aws": "./aws/mod.ts",
+        "./aws/command": "./aws/command.ts",
+
+        "./az": "./az/mod.ts",
+        "./az/command": "./az/command.ts",
+
+        "./bash": "./bash/mod.ts",
+        "./bash/command": "./bash/command.ts",
+
+        "./bun": "./bun/mod.ts",
+        "./bun/command": "./bun/command.ts",
+
+        "./cmd": "./cmd/mod.ts",
+        "./cmd/command": "./cmd/command.ts",
+
+        "./curl": "./curl/mod.ts",
+        "./curl/command": "./curl/command.ts",
+
+        "./deno": "./deno/mod.ts",
+        "./deno/command": "./deno/command.ts",
+
+        "./docker": "./docker/mod.ts",
+        "./docker/command": "./docker/command.ts",
+        "./docker/compose": "./docker/compose/mod.ts",
+        "./docker/compose/command": "./docker/compose/command.ts",
+        "./docker/compose/up": "./docker/compose/up.ts",
+        "./docker/compose/down": "./docker/compose/down.ts",
+
+        "./doctl": "./doctl/mod.ts",
+        "./doctl/command": "./doctl/command.ts",
+
+        "./dotnet": "./dotnet/mod.ts",
+        "./dotnet/command": "./dotnet/command.ts",
+
+        "./flarectl": "./flarectl/mod.ts",
+        "./flarectl/command": "./flarectl/command.ts",
+
+        "./git": "./git/mod.ts",
+        "./git/command": "./git/command.ts",
+
+        "./go": "./go/mod.ts",
+        "./go/command": "./go/command.ts",
+
+        "./gpg": "./gpg/mod.ts",
+        "./gpg/command": "./gpg/command.ts",
+
+        "./node": "./node/mod.ts",
+        "./node/command": "./node/command.ts",
+        "./node/npm": "./node/npm/mod.ts",
+        "./node/npm/command": "./node/npm/command.ts",
+        "./node/npx": "./node/npx/mod.ts",
+        "./node/npx/command": "./node/npx/command.ts",
+        "./node/pnpm": "./node/pnpm/mod.ts",
+        "./node/pnpm/command": "./node/pnpm/command.ts",
+        "./node/tsx": "./node/tsx/mod.ts",
+        "./node/tsx/command": "./node/tsx/command.ts",
+        "./node/yarn": "./node/yarn/mod.ts",
+        "./node/yarn/command": "./node/yarn/command.ts",
+
+        "./powershell": "./powershell/mod.ts",
+        "./powershell/command": "./powershell/command.ts",
+
+        "./pwsh": "./pwsh/mod.ts",
+        "./pwsh/command": "./pwsh/command.ts",
+
+        "./python": "./python/mod.ts",
+        "./python/command": "./python/command.ts",
+
+        "./sh": "./sh/mod.ts",
+        "./sh/command": "./sh/command.ts",
+
+        "./sudo": "./sudo/mod.ts",
+        "./sudo/command": "./sudo/command.ts",
+
+        "./tar": "./tar/mod.ts",
+        "./tar/command": "./tar/command.ts",
+
+        "./unzip": "./unzip/mod.ts",
+        "./unzip/command": "./unzip/command.ts",
+
+        "./vault": "./vault/mod.ts",
+        "./vault/command": "./vault/command.ts",
+
+        "./zip": "./zip/mod.ts",
+        "./zip/command": "./zip/command.ts"
+    },
+
+    "publish": { "exclude": ["**/*_test.ts"] }
+}
