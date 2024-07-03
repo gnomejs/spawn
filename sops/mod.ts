@@ -1,20 +1,20 @@
 /**
  * ## Overview
  * 
- * The age module wraps the age cli and provides a simple way to execute
- * age commands.
+ * The sops module wraps the sops cli and provides a simple way to execute
+ * sops commands.
  * 
  * The module relies upon the [@gnome/exec][exec] module and
- * has the same basic usage as the `Command` and `ShellCommand` class.
+ * has the same basic ussops as the `Command` and `ShellCommand` class.
  * 
  * ```typescript
- * import { age } from '@spawn/age'
+ * import { sops } from '@spawn/sops'
  * 
  * // outputs directly to stdout and stderror streams.
- * await age("-h").run();
+ * await sops("-h").run();
  * 
  * // pipes the output
- * const result = await age("-h");
+ * const result = await sops("-h");
  * console.log(result.stdout);
  * console.log(result.text());
  * console.log(result.code);
@@ -27,4 +27,4 @@
  * [exec]: https://jsr.io/@gnome/exec/doc
  * 
  */
-export { age, ageKeygen } from "./command.ts";
+export { sops }  from "./command.ts"

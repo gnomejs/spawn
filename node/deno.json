@@ -14,5 +14,12 @@
         "./tsx/command": "./tsx/command.ts",
         "./yarn": "./yarn/mod.ts",
         "./yarn/command": "./yarn/command.ts"
+    },
+
+    "publish": { 
+        "exclude": [
+            "**/*_test.ts",
+            "_test_utils.ts"
+        ] 
     }
 }

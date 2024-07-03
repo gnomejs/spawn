@@ -38,7 +38,7 @@ export class UnzipCommand extends Command {
  * @see {UnzipCommand}
  * @example
  * ```ts
- * import { unzip } from "@spawn/common/unzip"
+ * import { unzip } from "@spawn/xv/unzip"
  *
  * // Run the unzip command and writes to standard streams.
  * await unzip({ args: ["-r", "archive.unzip", "folder"] }).run()
@@ -46,7 +46,7 @@ export class UnzipCommand extends Command {
  *
  * @example
  * ```ts
- * import { unzip } from "@spawn/common/unzip"
+ * import { unzip } from "@spawn/xv/unzip"
  *
  * const r = await unzip({ args: ["-r", "archive.unzip", "folder"] });
  * console.log(r.code);

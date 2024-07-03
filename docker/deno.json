@@ -8,5 +8,7 @@
         "./compose/command": "./compose/command.ts",
         "./compose/up": "./compose/up.ts",
         "./compose/down": "./compose/down.ts"
-    }
+    },
+
+    "publish": { "exclude": ["**/*_test.ts"] }
 }

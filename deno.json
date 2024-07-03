@@ -17,9 +17,9 @@
     "exclude": [".git", "node_modules"],
 
     "publish": {
-        "include": ["**/*.md"],
         "exclude": [
-            "**/*_test.ts"
+            "**/*_test.ts",
+            "/*_test.ts"
         ]
     },
 
