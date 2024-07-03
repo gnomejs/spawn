@@ -6,8 +6,11 @@
 <span>Work less. Do more. </span>
 </div>
 
-The sudo module wraps the sudo cli. [@gnome/exec](https://jsr.io/@gnome/exec)
-powers this module.
+The sudo module  provides a simple way to execute
+sudo commands.
+
+The module relies upon the [@gnome/exec][exec] module and
+has the same basic ussops as the `Command` and `ShellCommand` class.
 
 ```typescript
 import { sudo } from '@spawn/sudo'
@@ -39,3 +42,5 @@ console.log(result3.code);
 ## License
 
 [MIT](./LICENSE.md)
+
+[exec]: https://jsr.io/@gnome/exec/doc
