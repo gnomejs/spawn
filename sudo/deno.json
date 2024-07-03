@@ -1,0 +1,8 @@
+{
+    "name": "@spawn/sudo",
+    "version": "0.0.0",
+    "exports": {
+        ".": "./mod.ts",
+        "./command": "./command.ts"
+    }
+}

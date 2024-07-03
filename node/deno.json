@@ -1,0 +1,18 @@
+{
+    "name": "@spawn/node",
+    "version": "0.0.0",
+    "exports": {
+        ".": "./mod.ts",
+        "./command": "./command.ts",
+        "./npm": "./npm/mod.ts",
+        "./npm/command": "./npm/command.ts",
+        "./npx": "./npx/mod.ts",
+        "./npx/command": "./npx/command.ts",
+        "./pnpm": "./pnpm/mod.ts",
+        "./pnpm/command": "./pnpm/command.ts",
+        "./tsx": "./tsx/mod.ts",
+        "./tsx/command": "./tsx/command.ts",
+        "./yarn": "./yarn/mod.ts",
+        "./yarn/command": "./yarn/command.ts"
+    }
+}
