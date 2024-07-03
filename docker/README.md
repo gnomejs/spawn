@@ -8,7 +8,7 @@
 
 ## Overview
 
-The `docker-cli` module provides a simple way to execute
+The `docker` module provides a simple way to execute
 docker commands.
 
 The module relies upon the [@gnome/exec][exec] module and
