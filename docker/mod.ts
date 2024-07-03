@@ -1,19 +1,26 @@
 /**
+ * ## Overview
+ *
  * The `docker-cli` module provides a simple way to execute
  * docker commands.
  *
- * The module relies upon the @gnome/exec module and
- * has the same basic usage as the `Command` class.
+ * The module relies upon the [@gnome/exec][exec] module and
+ * has the same basic usage as the `Command` and `ShellCommand` class.
  *
  * ## Basic Usage
  *
  * ```typescript
- * import { docker } from "@gnome/docker-cli";
+ * import { docker } from "@spawn/docker";
+ *
+ * await docker(["ps"]).run();
  *
  * const result = await docker(["ps"]);
  * console.log(result.code);
  * console.log(result.text());
  * ```
- * @module
+ *
+ * [MIT License](./LICENSE.md)
+ *
+ * [exec]: https://jsr.io/@gnome/exec/doc
  */
 export * from "./command.ts";

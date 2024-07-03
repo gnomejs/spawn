@@ -3,21 +3,22 @@ import { remove, writeTextFile } from "@gnome/fs";
 import { pathFinder } from "@gnome/exec/path-finder";
 import { assert as ok, assertEquals as equals } from "@std/assert";
 
-const hasExe = await pathFinder.findExe("deno") !== undefined;
+const hasExe = await pathFinder.findExe("bun") !== undefined;
 
-Deno.test("deno", { ignore: !hasExe }, async () => {
+Deno.test("bun: simple inline", { ignore: !hasExe }, async () => {
     const result = await bun("--version");
     equals(result.code, 0);
-    ok(result.text().startsWith("deno"));
+    // todo: update test to be less brittle
+    ok(result.text().startsWith("1"));
 });
 
-Deno.test("deno: invoke inline script", { ignore: !hasExe }, async () => {
+Deno.test("bun: invoke inline script", { ignore: !hasExe }, async () => {
     const result = await bunScript("console.log('Hello, World!');");
     equals(await result.text(), `Hello, World!\n`);
     equals(result.code, 0);
 });
 
-Deno.test("deno: invoke script files", async () => {
+Deno.test("bun: invoke script files", { ignore: !hasExe }, async () => {
     const script = `console.log('Hello, World!');`;
     await writeTextFile("test.js", script);
     await writeTextFile("test.ts", script);

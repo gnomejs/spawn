@@ -4,6 +4,7 @@
         "coverage": "deno test --coverage=.artifacts/code-coverage -A",
         "lcov": "deno coverage .artifacts/code-coverage --lcov > .artifacts/code-coverage.lcov",
         "prep": "deno fmt && deno lint",
+        "mod:doc": "deno run -A ./.tasks/document_mod.ts",
         "publish:test": "deno publish --dry-run --allow-dirty"
     },
 

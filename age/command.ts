@@ -10,12 +10,12 @@ pathFinder.set("age", {
         "${UserProfile}\\bin\\age.exe",
         "${UserProfile}\\scoop\\shims\\age.exe",
         "${ALLUSERSPROFILE}\\chocolatey\\bin\\age.exe",
-        "${ChocolateyInstall}\\bin\\age.exe"
+        "${ChocolateyInstall}\\bin\\age.exe",
     ],
     linux: [
         "${HOME}/.local/bin/age",
-        "/usr/local/bin/age", 
-        "/usr/bin/age"
+        "/usr/local/bin/age",
+        "/usr/bin/age",
     ],
 });
 

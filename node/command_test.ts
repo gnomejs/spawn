@@ -1,7 +1,7 @@
 import { node, nodeScript } from "./command.ts";
 import { remove, writeTextFile } from "@gnome/fs";
 import { assert as ok, assertEquals as equals } from "@std/assert";
-import { pathFinder } from "jsr:@gnome/exec@^0.4.4/path-finder";
+import { pathFinder } from "@gnome/exec/path-finder";
 
 const hasExe = await pathFinder.findExe("node") !== undefined;
 

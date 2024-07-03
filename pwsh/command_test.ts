@@ -1,5 +1,5 @@
-import { assertEquals as equals } from "jsr:@std/assert@^0.224.0";
-import { remove, writeTextFile } from "jsr:@gnome/fs@^0.0.0/deno";
+import { assertEquals as equals } from "@std/assert";
+import { remove, writeTextFile } from "@gnome/fs";
 import { pwshScript } from "./command.ts";
 
 Deno.test("simple inline test", async () => {

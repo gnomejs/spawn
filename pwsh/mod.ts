@@ -1,27 +1,32 @@
 /**
- * The `pwsh` module provides a simple way to execute
- * PowerShell Core scripts using the `pwsh` shell.
+ * ## Overview
  *
- * The module relies upon the @gnome/exec module and
- * has the same basic usage as the `Command` and `ShellCommand` class.
+ * The `pwsh` module provides a simple way to execute
+ * PowerShell Core scripts or files.
+ *
+ * The module relies upon the [@gnome/exec][exec] module and
+ * has the same basic ussops as the `Command` and `ShellCommand` class.
  *
  * ## Basic Usage
  *
  * ```typescript
- * import { pwshScript } from "@gnome/pwsh";
+ * import { pwshScript, pwsh } from "@gnome/pwsh";
  *
- * const cmd = await pwshScript("Write-Host 'Hello, World!'", { stdout: 'piped', stderr: 'piped' });
- * console.log(await cmd.text());
+ * const cmd = await pwshScript("Write-Host 'Hello, World!'");
+ * console.log(cmd.text());
  * console.log(cmd.code);
  *
  * console.log(await pwshScript("Write-Host 'Hello, World!'").text());
- *
  * console.log(await pwshScript("test.ps1").text());
  *
  * // runs powershell command and writes directly to console
- * await pwshScrip("Write-Host 'I am alive'").run();
+ * await pwshScript("Write-Host 'I am alive'").run();
  *
+ * await pwsh(["-ExecutionPolicy", "Bypass", "-File", "path/to/file.ps1"]).run();
  * ```
- * @module
+ *
+ * [MIT License](./LICENSE.md)
+ *
+ * [exec]: https://jsr.io/@gnome/exec/doc
  */
 export { pwsh, pwshScript } from "./command.ts";

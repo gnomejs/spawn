@@ -10,12 +10,12 @@ pathFinder.set("sops", {
         "${UserProfile}\\bin\\sops.exe",
         "${UserProfile}\\scoop\\shims\\sops.exe",
         "${ALLUSERSPROFILE}\\chocolatey\\bin\\sops.exe",
-        "${ChocolateyInstall}\\bin\\sops.exe"
+        "${ChocolateyInstall}\\bin\\sops.exe",
     ],
     linux: [
-        "${HOME}/.local/bin/sops", 
-        "/usr/local/bin/sops", 
-        "/usr/bin/sops"
+        "${HOME}/.local/bin/sops",
+        "/usr/local/bin/sops",
+        "/usr/bin/sops",
     ],
 });
 

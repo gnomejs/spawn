@@ -1,5 +1,5 @@
 import { sudo } from "./command.ts";
-import { assert as ok, assertEquals as equals } from "jsr:@std/assert@0.225.3";
+import { assert as ok, assertEquals as equals } from "@std/assert";
 import { cmd } from "@gnome/exec";
 import { pathFinder } from "@gnome/exec/path-finder";
 

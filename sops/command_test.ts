@@ -1,5 +1,5 @@
 import { assert as ok } from "@std/assert";
-import { sops} from "./command.ts";
+import { sops } from "./command.ts";
 import { pathFinder } from "@gnome/exec/path-finder";
 
 const hasExe = await pathFinder.findExe("sops");

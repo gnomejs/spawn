@@ -91,14 +91,6 @@ export class BunScriptCommand extends ShellCommand {
         const params = this.shellArgs ??
             [
                 "run",
-                "-A",
-                "--unstable-cron",
-                "--unstable-worker-options",
-                "--unstable-ffi",
-                "--unstable-http",
-                "--unstable-net",
-                "--unstable-fs",
-                "--unstable-kv",
             ];
 
         params.push(script);

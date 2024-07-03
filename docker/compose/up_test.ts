@@ -1,6 +1,6 @@
 import { up, type UpArgs } from "./up.ts";
-import { splatCompose } from "./cli.ts";
-import { assert as ok, assertEquals as equals } from "jsr:@std/assert@^0.224.0";
+import { splatCompose } from "./command.ts";
+import { assert as ok, assertEquals as equals } from "@std/assert";
 import { whichSync } from "@gnome/exec";
 
 const hasDocker = whichSync("docker") !== undefined;

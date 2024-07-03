@@ -1,7 +1,7 @@
 import { tsx, tsxScript } from "./command.ts";
 import { remove, writeTextFile } from "@gnome/fs";
-import { pathFinder } from "jsr:@gnome/exec@^0.4.1/path-finder";
-import { assert as ok, assertEquals as equals } from "jsr:@std/assert@0.225.3";
+import { pathFinder } from "@gnome/exec/path-finder";
+import { assert as ok, assertEquals as equals } from "@std/assert";
 
 const hasTsx = pathFinder.findExeSync("tsx") !== undefined;
 

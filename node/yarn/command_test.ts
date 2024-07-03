@@ -1,5 +1,5 @@
 import { yarn } from "./command.ts";
-import { assert as ok, assertEquals as equals } from "jsr:@std/assert@0.225.3";
+import { assert as ok, assertEquals as equals } from "@std/assert";
 import { pathFinder } from "@gnome/exec/path-finder";
 import { runTest } from "../_test_utils.ts";
 
