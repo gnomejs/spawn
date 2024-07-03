@@ -5,9 +5,12 @@ pathFinder.set("unzip", {
     name: "unzip",
     envVariable: "UNZIP_EXE",
     windows: [
+        "${LocalAppData}\\Programs\\bin\\unzip.exe",
+        "${UserProfile}\\bin\\unzip.exe",
+        "${UserProfile}\\scoop\\shims\\unzip.exe",
+        "${ALLUSERSPROFILE}\\chocolatey\\bin\\unzip.exe",
         "${ProgramFiles}}\\Info-ZIP\\unzip.exe",
         "${ChocolateyInstall}\\bin\\unzip.exe",
-        "${ScoopDir}\\shims\\unzip.exe",
     ],
     linux: ["/usr/local/bin/unzip", "/usr/bin/unzip"],
 });

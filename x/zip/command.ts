@@ -5,9 +5,12 @@ pathFinder.set("zip", {
     name: "zip",
     envVariable: "ZIP_EXE",
     windows: [
+        "${LocalAppData}\\Programs\\bin\\zip.exe",
+        "${UserProfile}\\bin\\zip.exe",
+        "${UserProfile}\\scoop\\shims\\zip.exe",
+        "${ALLUSERSPROFILE}\\chocolatey\\bin\\zip.exe",
         "${ProgramFiles}}\\Info-ZIP\\zip.exe",
         "${ChocolateyInstall}\\bin\\zip.exe",
-        "${ScoopDir}\\shims\\zip.exe",
     ],
     linux: ["/usr/local/bin/zip", "/usr/bin/zip"],
 });
