@@ -25,7 +25,18 @@
 
     "workspaces": [
         "./age",
-        "./x"
+        "./bash",
+        "./cmd",
+        "./curl",
+        "./docker",
+        "./git",
+        "./node",
+        "./powershell",
+        "./pwsh",
+        "./sh",
+        "./sops",
+        "./sudo",
+        "./xv"
     ],
     "imports": {
         "@gnome/env": "jsr:@gnome/env@^0.2.0",
