@@ -16,10 +16,10 @@
         "./yarn/command": "./yarn/command.ts"
     },
 
-    "publish": { 
+    "publish": {
         "exclude": [
             "**/*_test.ts",
             "_test_utils.ts"
-        ] 
+        ]
     }
 }

@@ -206,7 +206,23 @@
     ],
     "members": {
       "@spawn/age": {},
-      "@spawn/x": {}
+      "@spawn/apt": {},
+      "@spawn/bash": {},
+      "@spawn/choco": {},
+      "@spawn/cmd": {},
+      "@spawn/curl": {},
+      "@spawn/docker": {},
+      "@spawn/git": {},
+      "@spawn/node": {},
+      "@spawn/powershell": {},
+      "@spawn/pwsh": {},
+      "@spawn/sh": {},
+      "@spawn/sops": {},
+      "@spawn/ssh": {},
+      "@spawn/sudo": {},
+      "@spawn/terraform": {},
+      "@spawn/ubi": {},
+      "@spawn/xv": {}
     }
   }
 }

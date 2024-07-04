@@ -8,6 +8,9 @@
         "./az": "./az/mod.ts",
         "./az/command": "./az/command.ts",
 
+        "./consul": "./consul/mod.ts",
+        "./consul/command": "./consul/command.ts",
+
         "./bun": "./bun/mod.ts",
         "./bun/command": "./bun/command.ts",
 
@@ -29,8 +32,14 @@
         "./gpg": "./gpg/mod.ts",
         "./gpg/command": "./gpg/command.ts",
 
+        "./mkcert": "./mkcert/mod.ts",
+        "./mkcert/command": "./mkcert/command.ts",
+
         "./python": "./python/mod.ts",
         "./python/command": "./python/command.ts",
+
+        "./scoop": "./scoop/mod.ts",
+        "./scoop/command": "./scoop/command.ts",
 
         "./tar": "./tar/mod.ts",
         "./tar/command": "./tar/command.ts",
@@ -40,6 +49,9 @@
 
         "./vault": "./vault/mod.ts",
         "./vault/command": "./vault/command.ts",
+
+        "./winget": "./winget/mod.ts",
+        "./winget/command": "./winget/command.ts",
 
         "./zip": "./zip/mod.ts",
         "./zip/command": "./zip/command.ts"

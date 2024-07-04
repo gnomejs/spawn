@@ -25,7 +25,9 @@
 
     "workspaces": [
         "./age",
+        "./apt",
         "./bash",
+        "./choco",
         "./cmd",
         "./curl",
         "./docker",
@@ -35,7 +37,10 @@
         "./pwsh",
         "./sh",
         "./sops",
+        "./ssh",
         "./sudo",
+        "./terraform",
+        "./ubi",
         "./xv"
     ],
     "imports": {

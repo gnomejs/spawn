@@ -1,0 +1,16 @@
+{
+    "name": "@spawn/apt",
+    "version": "0.0.0",
+    "exports": {
+        ".": "./mod.ts",
+        "./command": "./command.ts",
+        "./add-repository": "./add-repository/mod.ts",
+        "./cache": "./cache/mod.ts",
+        "./dpkg": "./dpkg/mod.ts",
+        "./get": "./get/mod.ts",
+        "./key": "./key/mod.ts",
+        "./mark": "./key/mod.ts"
+    },
+
+    "publish": { "exclude": ["**/*_test.ts"] }
+}
