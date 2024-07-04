@@ -1,4 +1,4 @@
-# @spawn/ssh-cli
+# @spawn/ssh
 
 <div height=30" vertical-align="top">
 <image src="https://raw.githubusercontent.com/gnomejs/gnomejs/main/assets/icon.png"
@@ -17,7 +17,7 @@ has the same basic usage as the `Command` class.
 ## Basic Usage
 
 ```typescript
-import { ssh } from "@spawn/ssh-cli";
+import { ssh } from "@spawn/ssh";
 
 await ssh(["user@host", "ls"]).run(); 
 ```

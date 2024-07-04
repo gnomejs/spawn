@@ -8,7 +8,7 @@
 
 ## Overview
 
-The ubi module wraps the ubi cli and provides a simple way to execute
+The ubi module provides a simple way to execute
 ubi commands.
 
 The module relies upon the [@gnome/exec][exec] module and

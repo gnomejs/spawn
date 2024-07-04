@@ -2,11 +2,11 @@ import { apt } from "./command.ts";
 import { assert as ok, assertEquals as equals } from "@std/assert";
 import { pathFinder } from "@gnome/exec/path-finder";
 
-const hasApt = pathFinder.findExeSync("apt") !== undefined;
+const hasExe = pathFinder.findExeSync("apt") !== undefined && Deno.build.os === "linux";
 
 Deno.test({
     name: "apt",
-    ignore: !hasApt,
+    ignore: !hasExe,
     fn: async () => {
         const result = await apt("--version");
         equals(result.code, 0);
