@@ -1,4 +1,4 @@
-# @spawn/cloud/az
+# @spawn/az
 
 <div height=30" vertical-align="top">
 <image src="https://raw.githubusercontent.com/gnomejs/gnomejs/main/assets/icon.png"

@@ -6,7 +6,7 @@
 <span>Work less. Do more. </span>
 </div>
 
-The az module wraps the dotnet cli. [@gnome/exec](https://jsr.io/@gnome/exec)
+The dotnet module wraps the dotnet cli. [@gnome/exec](https://jsr.io/@gnome/exec)
 powers this module.
 
 ```typescript
