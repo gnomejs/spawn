@@ -1,0 +1,11 @@
+{
+    "name": "@spawn/python",
+    "version": "0.0.0",
+    "exports": {
+        ".": "./mod.ts",
+        "./command.ts": "./command.ts",
+        "./pip": "./pip/mod.ts",
+        "./pip/command": "./pip/command.ts"
+    },
+    "publish": { "exclude": ["**/*_test.ts"] }
+}

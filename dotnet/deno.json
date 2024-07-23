@@ -1,0 +1,10 @@
+{
+    "name": "@spawn/dotnet",
+    "version": "0.0.0",
+    "exports": {
+        ".": "./mod.ts",
+        "./command.ts": "./command.ts",
+        "./build": "./build.ts"
+    },
+    "publish": { "exclude": ["**/*_test.ts"] }
+}
