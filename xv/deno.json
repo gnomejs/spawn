@@ -1,13 +1,7 @@
 {
     "name": "@spawn/xv",
-    "version": "0.0.0-alpha-001",
+    "version": "0.0.0-alpha-002",
     "exports": {
-        "./aws": "./aws/mod.ts",
-        "./aws/command": "./aws/command.ts",
-
-        "./az": "./az/mod.ts",
-        "./az/command": "./az/command.ts",
-
         "./consul": "./consul/mod.ts",
         "./consul/command": "./consul/command.ts",
 
@@ -20,23 +14,14 @@
         "./doctl": "./doctl/mod.ts",
         "./doctl/command": "./doctl/command.ts",
 
-        "./dotnet": "./dotnet/mod.ts",
-        "./dotnet/command": "./dotnet/command.ts",
-
         "./flarectl": "./flarectl/mod.ts",
         "./flarectl/command": "./flarectl/command.ts",
-
-        "./go": "./go/mod.ts",
-        "./go/command": "./go/command.ts",
 
         "./gpg": "./gpg/mod.ts",
         "./gpg/command": "./gpg/command.ts",
 
         "./mkcert": "./mkcert/mod.ts",
         "./mkcert/command": "./mkcert/command.ts",
-
-        "./python": "./python/mod.ts",
-        "./python/command": "./python/command.ts",
 
         "./scoop": "./scoop/mod.ts",
         "./scoop/command": "./scoop/command.ts",
@@ -49,9 +34,6 @@
 
         "./vault": "./vault/mod.ts",
         "./vault/command": "./vault/command.ts",
-
-        "./winget": "./winget/mod.ts",
-        "./winget/command": "./winget/command.ts",
 
         "./zip": "./zip/mod.ts",
         "./zip/command": "./zip/command.ts"

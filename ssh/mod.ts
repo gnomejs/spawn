@@ -1,24 +1,25 @@
 /**
  * ## Overview
- * 
+ *
  * The `ssh` module provides a simple way to execute
  * ssh commands.
- * 
+ *
  * The module relies upon the [@gnome/exec][exec] module and
  * has the same basic usage as the `Command` class.
- * 
+ *
  * ## Basic Usage
- * 
+ *
  * ```typescript
  * import { ssh } from "@spawn/ssh";
- * 
- * await ssh(["user@host", "ls"]).run(); 
+ *
+ * await ssh(["user@host", "ls"]).run();
  * ```
- * 
+ *
  * [MIT License](./LICENSE.md)
- * 
+ *
  * [exec]: https://jsr.io/@gnome/exec/doc
- * 
+ *
+ * @module
  */
 export * from "./command.ts";
 export * from "./scp/mod.ts";

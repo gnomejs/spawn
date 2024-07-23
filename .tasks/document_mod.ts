@@ -22,12 +22,14 @@ for await (const entry of walk(rwd)) {
                     const modContentWithoutComment = modContent.slice(modCommentEndIndex + 2);
                     const newModContent = `/**
  * ${readmeContent.slice(overviewIndex).replaceAll("\n", "\n * ")}
+ * @module
  */`;
 
                     await Deno.writeTextFile(mod, newModContent + modContentWithoutComment);
                 } else {
                     const newModContent = `/**
  * ${readmeContent.slice(overviewIndex).replaceAll("\n", "\n * ")}
+ * @module
  */
 ${modContent}`;
                     await Deno.writeTextFile(mod, newModContent);

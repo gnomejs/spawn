@@ -1,5 +1,11 @@
-import { Command, type CommandArgs, type CommandOptions, ShellCommand, type ShellCommandOptions } from "@gnome/exec";
-import { pathFinder } from "@gnome/exec/path-finder";
+import {
+    Command,
+    type CommandArgs,
+    type CommandOptions,
+    pathFinder,
+    ShellCommand,
+    type ShellCommandOptions,
+} from "@gnome/exec";
 import { WINDOWS } from "@gnome/os-constants";
 import { isFile } from "@gnome/fs";
 import { isAbsolute, resolve } from "@std/path";
